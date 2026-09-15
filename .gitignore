@@ -46,3 +46,6 @@ Thumbs.db
 .vs/
 template.client/node_modules/
 template.client/.angular/
+
+[Bb]in/
+[Oo]bj/
