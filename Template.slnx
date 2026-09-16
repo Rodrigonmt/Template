@@ -1,7 +1,20 @@
 <Solution>
-  <Project Path="template.client/template.client.esproj">
-    <Build />
-    <Deploy />
-  </Project>
-  <Project Path="Template.Server/Template.Server.csproj" />
+  <Folder Name="/1-Web/">
+    <Project Path="template.client/template.client.esproj">
+      <Build />
+      <Deploy />
+    </Project>
+    <Project Path="Template.Server/Template.Server.csproj" />
+  </Folder>
+  <Folder Name="/2-Application/">
+    <Project Path="Template.Application/Template.Application.csproj" Id="dfb8950e-db18-47c5-b39d-7fb2caf21043" />
+  </Folder>
+  <Folder Name="/3-Domain/">
+    <Project Path="Template.Domain/Template.Domain.csproj" Id="e2bbd4fe-eadf-4555-b894-20a614fb1844" />
+  </Folder>
+  <Folder Name="/4-Infra/" />
+  <Folder Name="/4-Infra/4.1-Data/">
+    <Project Path="Template.Data/Template.Data.csproj" Id="3f601b80-d69c-49ed-a861-c3d3498f4a9a" />
+  </Folder>
+  <Folder Name="/4-Infra/4.2-CrossCutting/" />
 </Solution>
