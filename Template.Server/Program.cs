@@ -1,4 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Template.Data.Context;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Substituição direta da linha destacada:
+builder.Services.AddDbContext<TemplateContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+           .EnableSensitiveDataLogging());
 
 // Add services to the container.
 

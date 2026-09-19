@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Template.Data.Mappings;
 using Template.Domain.Entities;
+using Template.Data.Extensions;
 
 namespace Template.Data.Context
 {
@@ -20,6 +21,9 @@ namespace Template.Data.Context
         {
             // Apply entity configurations
             modelBuilder.ApplyConfiguration(new UserMap());
+
+            modelBuilder.SeedDate();
+
             base.OnModelCreating(modelBuilder);
         }
 
